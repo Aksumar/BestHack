@@ -1,5 +1,6 @@
 package carteen.controllers;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,9 +11,9 @@ import java.util.Map;
 @Controller
 public class MainPageController {
 
-    @GetMapping("/main")
-    public String mainPage(Model model) {
-        return "u";
+    @GetMapping("/canteen")
+    public String canteenPage(Model model) {
+        return "canteen";
     }
 
 }
