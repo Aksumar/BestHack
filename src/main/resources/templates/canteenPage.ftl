@@ -26,7 +26,7 @@
 
 <header> 
   <div id="about">
-    <a href="../static/index.html" title="index-2.html">Выбор столовой</a>
+    <a href="index.ftl" title="index-2.html">Выбор столовой</a>
   </div>
 </header>
 
