@@ -1,9 +1,6 @@
 
-@import "css";
-@import "ss";
-
-
-
+@import "../css/reset.css";
+@import "../css/grid.css";
 
 
 html {
@@ -26,6 +23,7 @@ body {
 	background-color: #d7d7b1;
 	position:relative;
 	min-width:960px;
+	background-image: url(../images/background1.jpg);
 }
 
 .ic {
@@ -56,11 +54,6 @@ h3 {
 	margin-bottom: 49px;
 }
 
-.page1 h3 {
-	text-align: center;
-	padding-top: 97px;
-	margin-bottom: 138px;
-}
 
 h3.head1 {
 	text-align: center;
@@ -173,9 +166,17 @@ a:hover {
 	margin-bottom: 0px;
 }
 
-.page1 .fleft {
-	margin-top: 1px;
-	margin-right: 22px;
+.btn {
+  background-color: white;
+  color: black;
+	border: 2px solid red; 
+	float: right;
+	margin-right: 2%;
+	
+}
+
+.btn:hover {
+  background-color: #c15443;
 }
 
 .fright {
@@ -208,9 +209,9 @@ header {
 	display: block;
 	position: relative;
 	z-index: 999;
-	padding: 29px 0 30px;
+	padding: 29px 0 35px;
 	background: transparent;
-	background-image: url(https://previews.123rf.com/images/annaleni/annaleni1606/annaleni160600058/58745259-thin-orange-vegetarian-healthy-food-line-seamless-pattern-vector-website-design-and-tile-background-.jpg)
+	background-image: url(../images/background1.jpg);
 }
 
 header #logo {
@@ -230,6 +231,7 @@ header #logo {
 	font-size: 3em;
 	line-height: 40px;
 	margin-bottom: 10px;
+	margin-left: 15%;
 	font-family: 'Exo 2', sans-serif;
   }
   
@@ -273,14 +275,15 @@ h1 a img {
 
 .content {
 	background-color: #fff;
-	padding-bottom: 113px;
+height: 100vh;
+}
+.content2 {
+	background-color: #fff;
+height: 150vh;
+width: 110%;
+
 }
 
-.page1 .content {
-	padding-top: 4px;
-	padding-bottom: 105px;
-
-}
 
 .block1 {
 
@@ -291,8 +294,14 @@ h1 a img {
 }
 
 
-
-
+.col-centered{
+	float: none;
+	margin-left: 15%;
+}
+.col-centered2{
+	float: none;
+	margin-left: 5%;
+}
 
 .block1 .price {
 	-moz-box-sizing: border-box;
@@ -697,53 +706,4 @@ address dd span {
 
 a.col2:hover {
 	color: #000;
-}
-
-/************Footer***********/
-
-footer {
-	padding: 75px 0 70px;
-	display: block;
-	color: #85846d;
-	font-size: 12px;
-	line-height: 14px;
-	text-align: center;
-}
-
-footer a:hover {
-	color: #5f5e4e;
-}
-
-.f_logo {
-	display: inline-block;
-	margin-bottom: 28px;
-}
-
-
-.copy {
-	padding-top: 31px;
-	margin: 0 7px;
-	border-top: 1px solid #5f5e4e;
-
-}
-
-#toTop {
-    background: url("../images/totop.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
-    border: medium none;
-    bottom: 70px;
-    display: none;
-    height: 55px;
-    width: 55px;
-    left: 58%;
-    margin-left: 500px;
-    overflow: hidden;
-    position: fixed;
-    text-decoration: none;
-    text-indent: -999px;
-    transition: all 0s ease 0s;
-    z-index: 20;
-}
-#toTop:hover {
-    background-position: right 0;
-    outline: medium none;
 }
