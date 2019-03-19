@@ -10,8 +10,8 @@
      <meta charset="utf-8">
      <link rel="icon" href="../static/images/favicon.ico">
      <link rel="shortcut icon" href="../static/images/favicon.ico" />
-     <link rel="stylesheet" href="css/touchTouch.css">
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="../static/css/touchTouch.css">
+     <link rel="stylesheet" href="../static/css/style.css">
      
      
      <script src="../static/js/jquery.js"></script>
@@ -31,16 +31,18 @@
      </script>
      </head>
      <body  class="">
-
+     
 <header> 
   <div id="about">
     <a href="index.html" title="index-2.html">Выбор столовой</a>
+    <button id="cart" class="btn">Корзина</button>
   </div>
+  
 </header>
 
 
 
-<div class="content"><div class="ic"></div>
+<div class="content2"><div class="ic"></div>
   <div class="container_12">
     <div class="grid_12">
         <div class="container-fluid">
@@ -48,15 +50,19 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <h3 class="head2">Меню</h3>
       </div>
-    </div>
-  </div>      
-</div>  
+      </div>
+      </div>
+      
+    </div>  
     
     <div class="tabs tb gallery">
-             <div class="div-nav  ">
+             <div class="div-nav">
              <div class="grid_12">
-               <div class="container bgcont">
-                    <div class="row background-row">
+              <div class="row">
+                <div class="col-lg-12 col-centered">
+
+                <div class="container-fluid">
+                    <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="top-cover"></div>
                  <ul class="nav">
                     <li class="selected"><a href="#tab-1" class="">Салаты</a></li>
@@ -65,14 +71,16 @@
                     <li><a href="#tab-4">Гарниры</a></li>
                     <li><a href="#tab-5">Основные блюда</a></li>
                     <li><a href="#tab-6">Десерты</a></li>
-                 </ul>
-                  </div>
-              </div>
-            </div>
-        </div>    
-      </div>
+               </ul>
+                 
+                 </div>
+                 </div>
+                 </div>
+             </div>    
+             </div>
 
-             
+
+          <div class="col-lg-12 col-centered2">
              <div class="div-tabs">
                 <div class="container bgcont">
                     
@@ -177,10 +185,13 @@
                   <div class="grid_3">
                     <a href="../static/images/big1.jpg" class="gal"><img src="../static/images/page3_img1.jpg" alt=""><span></span></a>
                     <div class="col2"><span class="col3"><a href="#">Десерт1</a></span> ₽ 19.99</div>
-                  </div>
-              </div>
+                   </div>
+                 </div>
+          </div>
              </div>
         </div>
+      </div>
+    </div>
   </div>
 </div>
 </body>
