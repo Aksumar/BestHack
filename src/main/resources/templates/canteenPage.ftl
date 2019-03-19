@@ -1,198 +1,466 @@
 <!DOCTYPE html>
-<html lang="en">
-     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/../static/images/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+           
+        <title>Столовая</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="../static/css/styles2.css" />
+        <script src="../static/js/store.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+            </nav>
+            <h1 class="band-name band-name-large"> <a href="index.ftl" style="text-decoration: none; color: rgb(255, 255, 255);">Выбор столовой</a></h1>
+        </header>
+        <section class="container content-section">
+                <section class="container content-section">
+                        <h2 class="section-header-cart" >КОРЗИНА</h2>
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">БЛЮДО</span>
+                            <span class="cart-price cart-header cart-column">ЦЕНА</span>
+                            <span class="cart-quantity cart-header cart-column">КОЛИЧЕСТВО</span>
+                        </div>
+                        <div class="cart-items">
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">СУММА</strong>
+                            <span class="cart-total-price">0р.</span>
+                        </div>
+                        <button class="btn btn-primary btn-purchase" type="button">ОПЛАТИТЬ</button>
+                    </section>
+                   
+            <h2 class="section-header">ЭКОНОМ ОБЕД</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Капуста б/к с овощами, растительным маслом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">35,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Суп гороховый с картофелем и копченостями</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">50,00</span>
+                        <button class="btn btn-primary shop-item-button"type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Тефтели мясные, рубленные в красном соусе</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">95,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Макароны отварные с маслом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">15,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Чай с сахаром</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">15,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.../static/images/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <title>Menu</title>
-     <meta charset="utf-8">
-     <link rel="icon" href="../static/images/favicon.ico">
-     <link rel="shortcut icon" href="../static/images/favicon.ico" />
-     <link rel="stylesheet" href="../static/css/touchTouch.css">
-     <link rel="stylesheet" href="../static/css/style.css">
+
+        <section class="container content-section">
+            <h2 class="section-header">ДИЕТИЧЕСКИЕ БЛЮДА</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Каша молочная манная с маслом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">40,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Пудинг творожный с черносливом, сгущенным молоком</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">60,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Пудинг творожный с черносливом, сметаной</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">60,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">ХОЛОДНЫЕ ЗАКУСКИ</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Капуста б/к с овощами, растительным маслом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">35,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Овощи свежие с растительным маслом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">40,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Салат "Анжелика" (ветчина, салат "Китайский", лук, яйцо, майонез)</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">55,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Салат "Столичный" (с курицей)</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">50,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Салат из редиса со свежим огурцом, яйцом, майонезом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">40,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Салат фруктовый с взбитыми сливками</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">50,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Свекла с черносливом, грецким орехом, чесноком, майонезом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">45,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="container content-section">
+            <h2 class="section-header">ПЕРВЫЕ БЛЮДА</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Суп гороховый с картофелем и копченостями</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">50,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Суп картофельный с грибами, вермишелью и сметаной</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">50,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">ВТОРЫЕ БЛЮДА</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Жульен на сливках</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">90,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Говядина отварная</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">120,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Оладьи из печени со сметаной</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">100,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Куры жареные</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">95,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Поджарка из филе кур в сливочном соусе</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">105,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Рыба, запеченная с помидором, сыром, майонезом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">160,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Свинина, запеченная "по-барски"</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">140,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Тефтели мясные, рубленные в красном соусе</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">95,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">ГАРНИРЫ</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Кабачки, тушенные с овощами</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">60,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Картофельное пюре</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">35,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Каша гречневая</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">20,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Макароны отварные с маслом</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">15,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">СОУСЫ / ХЛЕБ</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Горчица</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">5,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Кетчуп "Хайнц"</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">20,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Соус сливочный</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">15,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Соус "Тар-тар"</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">20,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Соус красный с кореньями</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">5,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Хлеб пшеничный</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">3,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Хлеб ржаной</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Хрен столовый</span>
+                    <img class="shop-item-image" src="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">5,00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container content-section">
+                <h2 class="section-header">НАПИТКИ</h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Горячий шоколад</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">30,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Компот вишнёвый</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">30,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Компот из чернослива</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">30,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Кофе 3 в 1</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">25,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Кофе б/р без сахара</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">25,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Хлеб пшеничный</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">25,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Кофе б/р с сахаром</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">35,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Сок в ассортименте</span>
+                        <img class="shop-item-image" src="">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">15,00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                            <span class="shop-item-title">Чай без сахара</span>
+                            <img class="shop-item-image" src="">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">15,00</span>
+                                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                                <span class="shop-item-title">Чай с сахаром</span>
+                                <img class="shop-item-image" src="">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">15,00</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                                </div>
+                            </div>
+                </div>
+            </section>
      
-     
-     <script src="../static/js/jquery.js"></script>
-     <script src="../static/js/jquery-migrate-1.1.1.js"></script>
-     <script src="../static/js/jquery.equalheights.js"></script>
-     <script src="../static/js/jquery.ui.totop.js"></script>
-     <script src="../static/js/jquery.tabs.min.js"></script>
-     <script src="../static/js/touchTouch.jquery.js"></script>
-     <script src="../static/js/jquery.easing.1.3.js"></script>
-     
-     <script>
-        $(document).ready(function(){
-
-          $().UItoTop({ easingType: 'easeOutQuart' });
-         $('.gallery a.gal').touchTouch();
-       }) 
-     </script>
-     </head>
-     <body  class="">
-     
-<header> 
-  <div id="about">
-    <a href="index.html" title="index-2.html">Выбор столовой</a>
-    <button id="cart" class="btn">Корзина</button>
-  </div>
-  
-</header>
-
-
-
-<div class="content2"><div class="ic"></div>
-  <div class="container_12">
-    <div class="grid_12">
-        <div class="container-fluid">
-            <div class ="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h3 class="head2">Меню</h3>
-      </div>
-      </div>
-      </div>
-      
-    </div>  
-    
-    <div class="tabs tb gallery">
-             <div class="div-nav">
-             <div class="grid_12">
-              <div class="row">
-                <div class="col-lg-12 col-centered">
-
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="top-cover"></div>
-                 <ul class="nav">
-                    <li class="selected"><a href="#tab-1" class="">Салаты</a></li>
-                    <li><a href="#tab-2">Супы</a></li>
-                    <li><a href="#tab-3">Каши</a></li>
-                    <li><a href="#tab-4">Гарниры</a></li>
-                    <li><a href="#tab-5">Основные блюда</a></li>
-                    <li><a href="#tab-6">Десерты</a></li>
-               </ul>
-                 
-                 </div>
-                 </div>
-                 </div>
-             </div>    
-             </div>
-
-
-          <div class="col-lg-12 col-centered2">
-             <div class="div-tabs">
-                <div class="container bgcont">
-                    
-                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6"><div class="top-cover"></div>
-              <div  id="tab-1" class="tab-content gallery1">
-                  <div class="grid_3">
-                    <a href="../static/images/big1.jpg" class="gal"><img src="../static/images/page3_img1.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Салат1</a></span> ₽ 19.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big2.jpg" class="gal"><img src="../static/images/page3_img2.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Салат2</a></span> ₽ 21.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big3.jpg" class="gal"><img src="../static/images/page3_img3.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Салат3</a></span> ₽ 23.90</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big4.jpg" class="gal"><img src="../static/images/page3_img4.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Салат4</a></span> ₽ 25.30</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big5.jpg" class="gal"><img src="../static/images/page3_img5.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Салат5</a></span> ₽ 10.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big6.jpg" class="gal"><img src="../static/images/page3_img6.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Салат6</a></span> ₽ 20.99</div>
-                  </div>
-              </div>
-              <div  id="tab-2" class="tab-content gallery2">
-                 
-                  <div class="clear"></div>
-                  <div class="grid_3">
-                    <a href="../static/images/big5.jpg" class="gal"><img src="../static/images/page3_img5.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Суп1</a></span> ₽ 10.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big6.jpg" class="gal"><img src="../static/images/page3_img6.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Суп2</a></span> ₽ 20.99</div>
-                  </div>
-              </div>
-              <div  id="tab-3" class="tab-content gallery3">
-                  <div class="grid_3">
-                    <a href="../static/images/big1.jpg" class="gal"><img src="../static/images/page3_img1.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Каша1</a></span> ₽ 19.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big2.jpg" class="gal"><img src="../static/images/page3_img2.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Каша2</a></span> ₽ 21.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big3.jpg" class="gal"><img src="../static/images/page3_img3.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Каша3</a></span> ₽ 23.90</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big4.jpg" class="gal"><img src="../static/images/page3_img4.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Каша4</a></span> ₽ 25.30</div>
-                  </div>
-                 
-              </div>
-              <div  id="tab-4" class="tab-content gallery4">
-
-                  <div class="grid_3">
-                    <a href="../static/images/big2.jpg" class="gal"><img src="../static/images/page3_img2.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Гарнир1</a></span> ₽ 21.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big3.jpg" class="gal"><img src="../static/images/page3_img3.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Гарнир2</a></span> ₽ 23.90</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big4.jpg" class="gal"><img src="../static/images/page3_img4.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Гарнир3</a></span> ₽ 25.30</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big5.jpg" class="gal"><img src="../static/images/page3_img5.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Гарнир4 </a></span> ₽ 10.99</div>
-                  </div>
-
-              </div>
-              <div  id="tab-5" class="tab-content gallery5">
-                  <div class="grid_3">
-                    <a href="../static/images/big1.jpg" class="gal"><img src="../static/images/page3_img1.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Блюдо1</a></span> ₽ 19.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big2.jpg" class="gal"><img src="../static/images/page3_img2.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Блюдо2</a></span> ₽ 21.99</div>
-                  </div>
-                 
-                  <div class="grid_3">
-                    <a href="../static/images/big5.jpg" class="gal"><img src="../static/images/page3_img5.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Блюдо3</a></span> ₽ 10.99</div>
-                  </div>
-                  <div class="grid_3">
-                    <a href="../static/images/big6.jpg" class="gal"><img src="../static/images/page3_img6.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Блюдо4</a></span> ₽ 20.99</div>
-                  </div>
-              </div>
-              <div  id="tab-6" class="tab-content gallery6">
-                  <div class="grid_3">
-                    <a href="../static/images/big1.jpg" class="gal"><img src="../static/images/page3_img1.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Десерт1</a></span> ₽ 19.99</div>
-                   </div>
-                 </div>
-          </div>
-             </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+    </body>
 </html>
