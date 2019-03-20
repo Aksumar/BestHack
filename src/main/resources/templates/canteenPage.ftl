@@ -11,680 +11,126 @@
         <title>Столовая</title>
         <meta name="description" content="This is the description">
 
-        <link rel="stylesheet" href="../static/css/styles2.css" />
-
-        <script src="../static/js/store.js" async></script>
-    </head>
-    <body>
-        <header class="main-header">
-            <nav class="main-nav nav">
-            </nav>
-            <h1 class="band-name band-name-large"> <a href="Index.html" style="text-decoration: none; color: rgb(255, 255, 255);">Выбор столовой</a></h1>
-        </header>
-        <section class="container content-section">
-                <section class="container content-section">
-                        <h2 class="section-header-cart" >КОРЗИНА</h2>
-                        <div class="cart-row">
-                            <span class="cart-item cart-header cart-column">БЛЮДО</span>
-                            <span class="cart-price cart-header cart-column">ЦЕНА</span>
-                            <span class="cart-quantity cart-header cart-column">КОЛИЧЕСТВО</span>
-                        </div>
-                        <div class="cart-items">
-                        </div>
-                        <div class="cart-total">
-                            <strong class="cart-total-title">СУММА</strong>
-                            <span class="cart-total-price">0р.</span>
-                        </div>
-                        <button class="btn btn-primary btn-purchase" type="button">ОПЛАТИТЬ</button>
-                    </section>
-                    <div class="container mt-5">
+    <title>${canteen.name}</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="../static/css/styles2.css"/>
+    <script src="../static/js/store.js" async></script>
+</head>
+<body>
+<header class="main-header">
+    <nav class="main-nav nav">
+    </nav>
+    <h1 class="band-name band-name-large"><a href="/" style="text-decoration: none; color: rgb(255, 255, 255);">Выбор
+        столовой</a></h1>
+</header>
+<section class="container content-section">
+    <section class="container content-section">
+        <h2 class="section-header-cart">КОРЗИНА</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">БЛЮДО</span>
+            <span class="cart-price cart-header cart-column">ЦЕНА</span>
+            <span class="cart-quantity cart-header cart-column">КОЛИЧЕСТВО</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">СУММА</strong>
+            <span class="cart-total-price">0р.</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">ОПЛАТИТЬ</button>
+    </section>
+    
+                   <div class="container mt-5">
     <h2 class ="mb-5 text-center">Выбор блюда</h2>
-                         
-                        
-                          
-                    
-        
-            <div class = "card-deck"></div>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Капуста б/к с овощами, растительным маслом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">35,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-     
-                    </div>
-                </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Суп гороховый с картофелем и копченостями</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">50,00</span>
-                        <button class="btn btn-primary shop-item-button"type="button">Добавить в корзину</button>
-                    </div>
+    
+<div class = "card-deck">
+    <section class="container content-section">
+        <h2 class="section-header">Салаты</h2>
+        <div class="shop-items">
+        <#list canteen.getSalads() as salad>
+            <div class="shop-item">
+            <div class = "card-body">
+                <span class="shop-item-title">${salad.getName()}</span>
+                <img class="shop-item-image" src="../static/images/4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">${salad.getPrice()}</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
                 </div>
             </div>
+        </#list>
         </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Тефтели мясные, рубленные в красном соусе</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">95,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Макароны отварные с маслом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">15,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Чай с сахаром</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">15,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
-        </div>
-            </div>
-        </section>
-
-
-        <section class="container content-section">
-            <h2 class="section-header">ДИЕТИЧЕСКИЕ БЛЮДА</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Каша молочная манная с маслом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">40,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Пудинг творожный с черносливом, сгущенным молоком</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">60,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Пудинг творожный с черносливом, сметаной</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">60,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
-        </section>
-
-        <section class="container content-section">
-            <h2 class="section-header">ХОЛОДНЫЕ ЗАКУСКИ</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Капуста б/к с овощами, растительным маслом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">35,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Овощи свежие с растительным маслом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">40,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Салат "Анжелика" (ветчина, салат "Китайский", лук, яйцо, майонез)</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">55,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Салат "Столичный" (с курицей)</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">50,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Салат из редиса со свежим огурцом, яйцом, майонезом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">40,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Салат фруктовый с взбитыми сливками</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">50,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Свекла с черносливом, грецким орехом, чесноком, майонезом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">45,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-
-    </duv>
-        </section>
-
-        
-        <section class="container content-section">
-            <h2 class="section-header">ПЕРВЫЕ БЛЮДА</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Суп гороховый с картофелем и копченостями</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">50,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Суп картофельный с грибами, вермишелью и сметаной</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">50,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container content-section">
-            <h2 class="section-header">ВТОРЫЕ БЛЮДА</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Жульен на сливках</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">90,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Говядина отварная</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">120,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Оладьи из печени со сметаной</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">100,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Куры жареные</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">95,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Поджарка из филе кур в сливочном соусе</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">105,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Рыба, запеченная с помидором, сыром, майонезом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">160,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Свинина, запеченная "по-барски"</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">140,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                    <span class="shop-item-title">Тефтели мясные, рубленные в красном соусе</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">95,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
-        </section>
-
-
-        <section class="container content-section">
-            <h2 class="section-header">ГАРНИРЫ</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-               
-                    <span class="shop-item-title">Кабачки, тушенные с овощами</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">60,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                  
-                    <span class="shop-item-title">Картофельное пюре</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">35,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-                 
-                    <span class="shop-item-title">Каша гречневая</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">20,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                
-                    <span class="shop-item-title">Макароны отварные с маслом</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">15,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container content-section">
-            <h2 class="section-header">СОУСЫ / ХЛЕБ</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                   
-                    <span class="shop-item-title">Горчица</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">5,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                    
-                    <span class="shop-item-title">Кетчуп "Хайнц"</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">20,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                   
-                    <span class="shop-item-title">Соус сливочный</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">15,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                    
-                    <span class="shop-item-title">Соус "Тар-тар"</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">20,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet1 text-white">
-                                <div class="card-body" >
-                  
-                    <span class="shop-item-title">Соус красный с кореньями</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">5,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-             
-                    <span class="shop-item-title">Хлеб пшеничный</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">3,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet2 text-white">
-                                <div class="card-body" >
-                 
-                    <span class="shop-item-title">Хлеб ржаной</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">2,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <div class="shop-item">
-                        <div class="card cardSet3 text-white">
-                                <div class="card-body" >
-             
-                    <span class="shop-item-title">Хрен столовый</span>
-                    <img class="shop-item-image" src="../static/images/4.jpg">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">5,00</span>
-                        <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                    </div>
-                </div>
-            </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container content-section">
-                <h2 class="section-header">НАПИТКИ</h2>
-                <div class="shop-items">
-                    <div class="shop-item">
-                            <div class="card cardSet1 text-white">
-                                    <div class="card-body" >
-                     
-                        <span class="shop-item-title">Горячий шоколад</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">30,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet2 text-white">
-                                    <div class="card-body" >
-                    
-                        <span class="shop-item-title">Компот вишнёвый</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">30,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet2 text-white">
-                                    <div class="card-body" >
-                     
-                        <span class="shop-item-title">Компот из чернослива</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">30,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet1 text-white">
-                                    <div class="card-body" >
-                       
-                        <span class="shop-item-title">Кофе 3 в 1</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">25,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet3 text-white">
-                                    <div class="card-body" >
-                   
-                        <span class="shop-item-title">Кофе б/р без сахара</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">25,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet1 text-white">
-                                    <div class="card-body" >
-                        
-                        <span class="shop-item-title">Хлеб пшеничный</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">25,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet2 text-white">
-                                    <div class="card-body" >
-                      
-                        <span class="shop-item-title">Кофе б/р с сахаром</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">35,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet3 text-white">
-                                    <div class="card-body" >
-                       
-                        <span class="shop-item-title">Сок в ассортименте</span>
-                        <img class="shop-item-image" src="../static/images/4.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">15,00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="shop-item">
-                            <div class="card cardSet1 text-white">
-                                    <div class="card-body" >
-                       
-                            <span class="shop-item-title">Чай без сахара</span>
-                            <img class="shop-item-image" src="../static/images/4.jpg">
-                            <div class="shop-item-details">
-                                <span class="shop-item-price">15,00</span>
-                                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <div class="shop-item">
-                                <div class="card cardSet2 text-white">
-                                        <div class="card-body" >
-                        
-                                <span class="shop-item-title">Чай с сахаром</span>
-                                <img class="shop-item-image" src="../static/images/4.jpg">
-                                <div class="shop-item-details">
-                                    <span class="shop-item-price">15,00</span>
-                                    <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+    </section>
     </div>
-    </body>
+ 
+
+
+    <section class="container content-section">
+        <h2 class="section-header">ПЕРВЫЕ БЛЮДА</h2>
+        <div class="shop-items">
+        <#list canteen.getSoups() as soup>
+            <div class="shop-item">
+             <div class = "card-body">
+                <span class="shop-item-title">${soup.getName()}</span>
+                <img class="shop-item-image" src="../static/images/4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">${soup.getPrice()}</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </#list>
+        </div>
+    </section>
+
+    <section class="container content-section">
+        <h2 class="section-header">ВТОРЫЕ БЛЮДА</h2>
+        <div class="shop-items">
+         <div class = "card-body">
+         <#list canteen.getMainDishes() as main>
+             <div class="shop-item">
+                 <span class="shop-item-title">${main.getName()}</span>
+                 <img class="shop-item-image" src="../static/images/4.jpg">
+                 <div class="shop-item-details">
+                     <span class="shop-item-price">${main.getPrice()}</span>
+                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                 </div>
+             </div>
+         </#list>
+        </div>
+    </section>
+
+
+    <section class="container content-section">
+        <h2 class="section-header">ГАРНИРЫ</h2>
+    <#list canteen.getSideDishes() as side>
+             <div class="shop-item">
+                 <span class="shop-item-title">${side.getName()}</span>
+                 <img class="shop-item-image" src="../static/images/4.jpg">
+                 <div class="shop-item-details">
+                     <span class="shop-item-price">${side.getPrice()}</span>
+                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                 </div>
+                    </div>
+             </div>
+    </#list>
+    </section>
+
+    <section class="container content-section">
+        <h2 class="section-header">НАПИТКИ</h2>
+        <div class="shop-items">
+         <div class = "card-body">
+         <#list canteen.getDrinks() as drink>
+             <div class="shop-item">
+                 <span class="shop-item-title">${drink.getName()}</span>
+                 <img class="shop-item-image" src="../static/images/4.jpg">
+                 <div class="shop-item-details">
+                     <span class="shop-item-price">${drink.getPrice()}</span>
+                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                 </div>
+             </div>
+                </div>
+         </#list>
+   </div>
+</section>
+</div>
+</body>
 </html>

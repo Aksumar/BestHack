@@ -5,6 +5,9 @@ import carteen.dataClesses.Canteen;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Аалог базы данных в проекте
+ */
 public class CanteenRepo {
     private List<Canteen> canteenList = new ArrayList<>();
 
