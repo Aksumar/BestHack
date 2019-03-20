@@ -1,13 +1,15 @@
 package carteen.dataClesses;
 
 import lombok.Data;
-
+import lombok.NoArgsConstructor;
 import java.util.HashMap;
 
-public @Data class Product
+@NoArgsConstructor
+@Data
+public class Product
 {
     private String name;
-    private String weight;
+    private int weight;
     private int calorificValue;
     private HashMap<String, Integer> traceElements;
     private String pathToImage;
