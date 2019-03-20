@@ -1,0 +1,98 @@
+
+.card-body {
+    padding: 0.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0;
+}
+.cardSet1{
+    background-color:#669999;
+}
+.cardSet2{
+    background-color:#cc6666;
+}
+.cardSet3{
+    background-color:#cc9966;
+}
+h3.card-title{
+    font-size: 1.5rem;
+}
+h5.card-body{
+    font-size: 1.2rem;
+}
+
+
+
+header {
+	display: block;
+	position: relative;
+	
+	padding: 29px 0 35px;
+	background: transparent;
+	background-image: url(../images/background1.jpg);
+}
+
+header #logo {
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  header #logo span {
+	font-size: 3em;
+	line-height: 45px;
+	
+	font-family: 'Exo 2', sans-serif;
+  }
+  
+  #about {
+	text-align: left;
+	font-size: 2em;
+	line-height: 40px;
+margin-left: 10%;
+	font-family: 'Exo 2', sans-serif;
+  }
+  
+  #about > a {color: #fff}
+  
+  #about > a:hover {
+	color: #b0b0b0;
+  }
+  
+
+
+h1 {
+	float: none;
+	z-index: 999;
+	font-size: 0;
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 58px;
+
+}
+h1 a {
+	display: inline-block;
+	overflow: hidden;
+	width: 424px;
+	height: 126px;
+	text-indent: -999px;
+	transition: 0s ease;
+
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+}
+
+h1 a img {
+	display: block;	
+}
+
+footer{
+	display: block;
+	position: relative;
+	margin-top: 10%;
+	padding: 29px 0 35px;
+	background: transparent;
+	background-image: url(../images/background1.jpg);
+}
