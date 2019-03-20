@@ -29,10 +29,15 @@ public class MainPageController {
     }
 
     @GetMapping("/")
-
     public String mainPage(Map<String, Object> model)
     {
         return "index";
+    }
+
+    @GetMapping("/admin")
+    public String adminPage(Map<String, Object> model)
+    {
+        return "adminPage";
     }
 
 
