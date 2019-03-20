@@ -51,7 +51,7 @@
             <div class="shop-item">
             <div class = "card-body">
                 <span class="shop-item-title">${salad.getName()}</span>
-                <img class="shop-item-image" src="../static/images/4.jpg">
+                <img class="shop-item-image" src="../static/images/salad.svg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">${salad.getPrice()}</span>
                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
@@ -71,7 +71,7 @@
             <div class="shop-item">
              <div class = "card-body">
                 <span class="shop-item-title">${soup.getName()}</span>
-                <img class="shop-item-image" src="../static/images/4.jpg">
+                <img class="shop-item-image" src="../static/images/porrige.svg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">${soup.getPrice()}</span>
                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
@@ -88,7 +88,7 @@
          <#list canteen.getMainDishes() as main>
              <div class="shop-item">
                  <span class="shop-item-title">${main.getName()}</span>
-                 <img class="shop-item-image" src="../static/images/4.jpg">
+                 <img class="shop-item-image" src="../static/images/meat.svg">
                  <div class="shop-item-details">
                      <span class="shop-item-price">${main.getPrice()}</span>
                      <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
@@ -104,7 +104,7 @@
     <#list canteen.getSideDishes() as side>
              <div class="shop-item">
                  <span class="shop-item-title">${side.getName()}</span>
-                 <img class="shop-item-image" src="../static/images/4.jpg">
+                 <img class="shop-item-image" src="../static/images/pasta.svg">
                  <div class="shop-item-details">
                      <span class="shop-item-price">${side.getPrice()}</span>
                      <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
@@ -121,7 +121,7 @@
          <#list canteen.getDrinks() as drink>
              <div class="shop-item">
                  <span class="shop-item-title">${drink.getName()}</span>
-                 <img class="shop-item-image" src="../static/images/4.jpg">
+                 <img class="shop-item-image" src="../static/images/drink.svg">
                  <div class="shop-item-details">
                      <span class="shop-item-price">${drink.getPrice()}</span>
                      <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
