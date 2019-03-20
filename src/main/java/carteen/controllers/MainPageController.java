@@ -1,28 +1,37 @@
 package carteen.controllers;
 
+import carteen.DBSimulation.CanteenRepo;
 import carteen.dataClesses.Canteen;
-
+import carteen.logic.SubMethods;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
 @Controller
 public class MainPageController {
 
-    List<Canteen> canteenList = new ArrayList<>(3);
+    CanteenRepo canteenRepo = new CanteenRepo();
+
 
     @GetMapping("/canteen")
-    public String canteenPage(@RequestParam String numberOfCanteen, Model model) {
+    public String canteenPage(@RequestParam(name = "numberOfCanteen") String index, Map<String, Object> model) {
+
+        if(!SubMethods.isInteger(index))
+            return "redirect:/";
+        else
+            model.put("canteen", canteenRepo.getCaneenList().get(Integer.parseInt(index)));
         return "canteenPage";
     }
 
     @GetMapping("/")
-    public String mainPage(Model model) {
+
+    public String mainPage(Map<String, Object> model)
+    {
+        Canteen x = new Canteen();
+        x.setName("Blan");
+        canteenRepo.addCanteen(x);
         return "index";
     }
 
