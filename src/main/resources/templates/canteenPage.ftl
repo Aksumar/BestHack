@@ -43,82 +43,82 @@
         <button class="btn btn-primary btn-purchase" type="button">ОПЛАТИТЬ</button>
     </section>
 
-    <h2 class="section-header">ЭКОНОМ ОБЕД</h2>
-    <div class="shop-items">
-        <div class="shop-item">
-            <span class="shop-item-title">Капуста б/к с овощами, растительным маслом</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">35,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Суп гороховый с картофелем и копченостями</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">50,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Тефтели мясные, рубленные в красном соусе</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">95,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Макароны отварные с маслом</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">15,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Чай с сахаром</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">15,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-    </div>
+    <#--<h2 class="section-header">ЭКОНОМ ОБЕД</h2>-->
+    <#--<div class="shop-items">-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Капуста б/к с овощами, растительным маслом</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">35,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Суп гороховый с картофелем и копченостями</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">50,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Тефтели мясные, рубленные в красном соусе</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">95,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Макароны отварные с маслом</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">15,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Чай с сахаром</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">15,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+    <#--</div>-->
 </section>
 
 
-<section class="container content-section">
-    <h2 class="section-header">ДИЕТИЧЕСКИЕ БЛЮДА</h2>
-    <div class="shop-items">
-        <div class="shop-item">
-            <span class="shop-item-title">Каша молочная манная с маслом</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">40,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Пудинг творожный с черносливом, сгущенным молоком</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">60,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Пудинг творожный с черносливом, сметаной</span>
-            <img class="shop-item-image" src="">
-            <div class="shop-item-details">
-                <span class="shop-item-price">60,00</span>
-                <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
-            </div>
-        </div>
+<#--<section class="container content-section">-->
+    <#--<h2 class="section-header">ДИЕТИЧЕСКИЕ БЛЮДА</h2>-->
+    <#--<div class="shop-items">-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Каша молочная манная с маслом</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">40,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Пудинг творожный с черносливом, сгущенным молоком</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">60,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--<div class="shop-item">-->
+            <#--<span class="shop-item-title">Пудинг творожный с черносливом, сметаной</span>-->
+            <#--<img class="shop-item-image" src="">-->
+            <#--<div class="shop-item-details">-->
+                <#--<span class="shop-item-price">60,00</span>-->
+                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
+            <#--</div>-->
+        <#--</div>-->
 
-    </div>
-</section>
+    <#--</div>-->
+<#--</section>-->
 
 <section class="container content-section">
     <h2 class="section-header">Салаты</h2>
@@ -255,91 +255,22 @@
     <#--</div>-->
 <#--</section>-->
 
-<#--<section class="container content-section">-->
-    <#--<h2 class="section-header">НАПИТКИ</h2>-->
-    <#--<div class="shop-items">-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Горячий шоколад</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">30,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Компот вишнёвый</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">30,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Компот из чернослива</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">30,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Кофе 3 в 1</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">25,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Кофе б/р без сахара</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">25,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Хлеб пшеничный</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">25,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Кофе б/р с сахаром</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">35,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Сок в ассортименте</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">15,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Чай без сахара</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">15,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-        <#--<div class="shop-item">-->
-            <#--<span class="shop-item-title">Чай с сахаром</span>-->
-            <#--<img class="shop-item-image" src="">-->
-            <#--<div class="shop-item-details">-->
-                <#--<span class="shop-item-price">15,00</span>-->
-                <#--<button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>-->
-            <#--</div>-->
-        <#--</div>-->
-    <#--</div>-->
-<#--</section>-->
+<section class="container content-section">
+    <h2 class="section-header">НАПИТКИ</h2>
+    <div class="shop-items">
+         <#list canteen.getDrinks() as drink>
+             <div class="shop-item">
+                 <span class="shop-item-title">${drink.getName()}</span>
+                 <img class="shop-item-image" src="">
+                 <div class="shop-item-details">
+                     <span class="shop-item-price">${drink.getPrice()}</span>
+                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
+                 </div>
+             </div>
+         </#list>
+
+    </div>
+</section>
 
 </body>
 </html>
