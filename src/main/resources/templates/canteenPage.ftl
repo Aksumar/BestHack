@@ -71,7 +71,7 @@
             <div class="shop-item">
              <div class = "card-body">
                 <span class="shop-item-title">${soup.getName()}</span>
-                <img class="shop-item-image" src="../static/images/porrige.svg">
+                <img class="shop-item-image" src="../static/images/soup.svg">
                 <div class="shop-item-details">
                     <span class="shop-item-price">${soup.getPrice()}</span>
                     <button class="btn btn-primary shop-item-button" type="button">Добавить в корзину</button>
