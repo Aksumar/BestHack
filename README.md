@@ -1,4 +1,6 @@
-# BestHack
+# BestHack LIA
+
+почта капитана : iskhakovalilia@yandex.ru
 
 ## Используемые технологии
 + Back-end
