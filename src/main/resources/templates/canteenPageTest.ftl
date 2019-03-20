@@ -14,7 +14,7 @@
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
 
-    <title>Столовая</title>
+    <title></title>
     <meta name="description" content="This is the description">
     <link rel="stylesheet" href="../static/css/styles2.css"/>
     <script src="../static/js/store.js" async></script>

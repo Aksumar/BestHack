@@ -16,4 +16,5 @@ public class Canteen {
     private List<Product> sideDishes;
     private List<Product> mainDishes;
     private List<Product> desserts;
+    private List<Product> drinks;
 }

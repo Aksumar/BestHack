@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.awt.image.AreaAveragingScaleFilter;
+import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -80,6 +81,12 @@ public class MainPageController {
         main.setWeight(230);
         main.setTraceElements(elements);
 
+        Product drink = new Product();
+        main.setCalorificValue(100);
+        main.setName("Сок");
+        main.setWeight(230);
+        main.setTraceElements(elements);
+
         ArrayList<Product> deserts = new ArrayList<>();
         deserts.add(des);
 
@@ -89,8 +96,8 @@ public class MainPageController {
         ArrayList<Product> soups = new ArrayList<>();
         soups.add(soup);
 
-        ArrayList<Product> porideges = new ArrayList<>();
-        porideges.add(por);
+        ArrayList<Product> porridges = new ArrayList<>();
+        porridges.add(por);
 
         ArrayList<Product> sides = new ArrayList<>();
         sides.add(side);
@@ -98,13 +105,17 @@ public class MainPageController {
         ArrayList<Product> mainDishes = new ArrayList<>();
         mainDishes.add(main);
 
+        ArrayList<Product> drinks = new ArrayList<>();
+        drinks.add(drink);
+
         x.setDesserts(deserts);
         x.setMainDishes(mainDishes);
-        x.setPorridge(porideges);
+        x.setPorridge(porridges);
 
         x.setSalads(salads);
         x.setSideDishes(sides);
         x.setSoups(soups);
+        x.setDrinks(drinks);
 
 
 

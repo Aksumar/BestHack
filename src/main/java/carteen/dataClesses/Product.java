@@ -13,4 +13,5 @@ public class Product
     private int calorificValue;
     private HashMap<String, Integer> traceElements;
     private String pathToImage;
+    private Integer price = 40;
 }
