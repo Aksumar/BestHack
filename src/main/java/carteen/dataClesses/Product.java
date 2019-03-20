@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class Product
 {
     private String name;
-    private String weight;
+    private int weight;
     private int calorificValue;
     private HashMap<String, Integer> traceElements;
     private String pathToImage;
