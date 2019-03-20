@@ -10,6 +10,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
+/**
+ * Класс для SPRING, необходимый для конфигурации защиты и входа на сайта.
+ * Предполагалось,что зайти на страницу добавки/редактирования меню сможет только администратор
+ */
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {

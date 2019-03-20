@@ -5,6 +5,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.HashMap;
 
+/**
+ * POJO любого бюлда, расширенная версия для последующего включения в БД
+ */
 @NoArgsConstructor
 @Data
 public class Product {

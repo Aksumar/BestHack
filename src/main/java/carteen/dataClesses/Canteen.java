@@ -5,6 +5,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * POJO столовой.
+ */
 @NoArgsConstructor
 @Data
 public class Canteen {

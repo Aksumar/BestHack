@@ -5,6 +5,9 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * Конфигурационный класс для SPRING
+ */
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
     @Override

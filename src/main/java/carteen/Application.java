@@ -5,10 +5,15 @@ import carteen.dataClesses.Canteen;
 import carteen.dataClesses.Product;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.core.parameters.P;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
+/**
+ * Main-класс.
+ * В свзяи с тсутствием базы данных, здесь происходит инициализация столовых
+ */
 @SpringBootApplication
 public class Application {
 
